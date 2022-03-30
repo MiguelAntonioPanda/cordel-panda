@@ -36,10 +36,12 @@ header a, footer a{
     color: white;
     text-decoration: none;
     font-weight: bolder;
+    transition-duration: 0.5s;
 }
 header a:hover, footer a:hover{
-    color: gray;
+    color: rgb(45, 189, 247);
     text-decoration: underline;
+    font-size: 1.2em;
 }
 section{
     padding-top: 10vh;
@@ -52,13 +54,15 @@ section{
 section >p{
     padding-bottom: 2em;
 }
+section.normal p{
+    transition-duration: 0.5s;
+}
+section.normal p:hover{
+    font-size: 1.6em;
+}
 section.normal{
     background-color: white;
     color: black;
-    transition-duration: 0.5s;
-}
-section.normal:hover{
-    font-size: 1.3em;
 }
 section.imagem{
     background-color: rgb(46, 46, 46);
@@ -72,11 +76,22 @@ section.imagem >p{
     display: inline-block;
     padding: 10px;  
     text-shadow: 5px 1px 0 rgba(0, 0, 0, 0.384);
+    transition-duration: 0.5s;
+}
+section.imagem >p:hover{
+    font-size: 1.8em;
+    align-items: center;
+    color: rgb(190, 148, 7);
 
+}
+section#img00{
+    background-image: url(./img/00.webp);
+    background-position: center left;
+    background-attachment: fixed;
 }
 section#img01{
     background-image: url(./img/background001.jpg);
-    background-position: right center;
+    
 }
 section#img02{
     background-image: url(./img/background002.jpg);
@@ -87,4 +102,14 @@ footer{
     text-align: center;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+}
+footer{
+    padding: 30px;
+}
+footer img{
+   
+}
+.rodape a{
+    float: right;
+    margin-right: 20px;
 }
