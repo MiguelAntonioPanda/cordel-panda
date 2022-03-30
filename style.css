@@ -59,6 +59,7 @@ section.normal p{
 }
 section.normal p:hover{
     font-size: 1.6em;
+    color: rgb(45, 189, 247);
 }
 section.normal{
     background-color: white;
